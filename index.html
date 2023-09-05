@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Study JP</title>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Let's study Japanese.</h1>
+      <div class="input">
+        <input
+          id="start"
+          placeholder="Input start your lesson"
+          value="1"
+          type="number"
+          onchange="setTime()"
+        />
+        <input
+          id="end"
+          placeholder="Input end your lesson"
+          value="9"
+          type="number"
+          onchange="setTime()"
+        />
+        <input id="time" placeholder="Input end time" value="2" type="number" onchange="setTime()" />
+        <button onclick="setHiragana()">Hiragana</button>
+        <button onclick="setKatakana()">Katagana</button>
+      </div>
+      <div class="input">
+        <button onclick="startTest()">Start</button>
+        <button onclick="stopTest()">Stop</button>
+        <button onclick="stopTest()">Step</button>
+      </div>
+      <div class="output" id="output"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

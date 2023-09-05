@@ -1,0 +1,44 @@
+.main {
+    width: 50%;
+    height: 400px;
+    margin: 200px auto;
+    padding: 20px;
+    border: 3px black solid;
+    text-align: center;
+    align-items: center;
+}
+
+h1 {
+    color: red;
+}
+
+.input {
+    width: min-content;
+    margin: 30px auto;
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    padding: 5px 15px;
+    background-color: aqua;
+}
+
+button:hover {
+    background-color: rgb(19, 221, 137);
+}
+
+button:active {
+    background-color:rgb(9, 52, 243);
+}
+
+.output {
+    margin: 70px auto;
+    width: 100px;
+    text-align: center;
+    align-items: center;
+}
+
+.output img {
+    width: 100%;
+}

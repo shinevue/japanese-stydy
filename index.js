@@ -36,10 +36,9 @@ function setHiragana() {route = "hi";}
 function setKatakana() {route = "ka";}
 
 function change() {
-  var a,
-    b,
-    st = document.getElementById("start").value,
-    ed = document.getElementById("end").value;
+  var a, b;
+  var st = document.getElementById("start").value;
+  var ed = document.getElementById("end").value;
   a = parseInt(st - 1 + Math.random() * ed);
   b = parseInt(Math.random() * 5);
   if (document.getElementById("output").innerHTML ==
@@ -51,6 +50,4 @@ function change() {
 
 function setTime() {
   time = document.getElementById("time").value * 1000;
-  clearInterval(timer);
-  timer = setInterval(change, time);
 }

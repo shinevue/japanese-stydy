@@ -32,20 +32,30 @@ function stopTest() {
   change();
 }
 
-function setHiragana() {route = "hi";}
-function setKatakana() {route = "ka";}
+function setHiragana() {
+  route = "hi";
+}
+function setKatakana() {
+  route = "ka";
+}
 
 function change() {
   var a, b;
   var st = document.getElementById("start").value;
   var ed = document.getElementById("end").value;
-  a = parseInt(st - 1 + Math.random() * ed);
+  a = parseInt(st - 1 + Math.random() * (ed - st + 1));
+
+  console.log(a);
   b = parseInt(Math.random() * 5);
-  if (document.getElementById("output").innerHTML ==
-    `<img src="images/${route}/${voice[a][b]}.PNG" alt="${voice[a][b]}" />`) change();
+  if (
+    document.getElementById("output").innerHTML ==
+    `<img src="images/${route}/${voice[a][b]}.PNG" alt="${voice[a][b]}" />`
+  )
+    change();
   else
-    document.getElementById("output").innerHTML =
-      `<img src="images/${route}/${voice[a][b]}.PNG" alt="${voice[a][b]}" />`;
+    document.getElementById(
+      "output"
+    ).innerHTML = `<img src="images/${route}/${voice[a][b]}.PNG" alt="${voice[a][b]}" />`;
 }
 
 function setTime() {

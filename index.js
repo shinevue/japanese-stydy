@@ -44,8 +44,6 @@ function change() {
   var st = document.getElementById("start").value;
   var ed = document.getElementById("end").value;
   a = parseInt(st - 1 + Math.random() * (ed - st + 1));
-
-  console.log(a);
   b = parseInt(Math.random() * 5);
   if (
     document.getElementById("output").innerHTML ==
